@@ -1,0 +1,28 @@
+{
+  "name": "videotube",
+  "version": "1.0.0",
+  "description": "A video streaming backend",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongoose"
+  ],
+  "author": "Rajesh",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1",
+    "morgan": "^1.10.0",
+    "winston": "^3.13.1"
+  }
+}
