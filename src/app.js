@@ -3,6 +3,9 @@ import morgan from "morgan";
 import cors from "cors";
 import logger from "./utils/logger.js";
 
+// Routes import
+import healthCheckRouter from "./routes/healthcheck.routes.js";
+
 const app = express();
 
 const morganFormat = ":method :url :status :response-time ms";
@@ -32,5 +35,8 @@ app.use(
     },
   })
 );
+
+// Routes
+app.use("/api/v1", healthCheckRouter);
 
 export { app };
